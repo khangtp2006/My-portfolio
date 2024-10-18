@@ -13,6 +13,8 @@
   --text-color-light: hsl(207, 4%, 56%);
   --body-color: hsl(207, 4%, 99%);
   --container-color: hsl(207, 4%, 95%);
+  --typing-color: hsl(177, 93%, 22%);
+  --download-color: aqua;
 
   /* Change the first number */
   /* Blue: 207 - Purple: 250 - Pink: 356 - Teal: 174 */
@@ -122,6 +124,8 @@ body.dark-theme {
   --text-color: hsl(207, 4%, 65%);
   --body-color: hsl(207, 4%, 10%);
   --container-color: hsl(207, 4%, 12%);
+  --typing-color: hsl(177, 93%, 74%);
+  --download-color: hsl(233, 75%, 23%);
 }
 
 .dark-theme .home__shape-wawes,
@@ -186,10 +190,16 @@ body.dark-theme {
   text-align: center;
 }
 
+
+
 .section__title {
   font-size: var(--h1-font-size);
   font-weight: var(--font-semi-bold);
   margin-bottom: .25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: .8rem;
 }
 
 .section__subtitle {
@@ -339,11 +349,13 @@ body.dark-theme {
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  box-shadow: 0 0 100px 20px rgb(136, 162, 184);
 }
 
 .home__perfil img{
   width: 150px;
 }
+
 
 .home__shape-wawes,
 .home__shape-circle{
@@ -409,6 +421,28 @@ body.dark-theme {
   font-weight: var(--font-semi-bold);
 }
 
+.home__title{
+  font-size: 1.45rem;
+}
+
+.download {
+  font-weight: bold;
+  font-family: var(--title-font);
+  background-color: var(--download-color);
+  color: var(--title-color);
+  font-size: large;
+  border-radius: 40px;
+  display: inline-block;
+  align-content: center;
+  justify-content: center;
+  padding: 12px 35px;
+  margin-top: 30px;
+  box-shadow: 0 0 10px 2px #fff;
+}
+
+.ri-download-line{
+  vertical-align: middle;
+}
 /*=============== SKILLS ===============*/
 .skills__container{
   row-gap: 3.5rem;
@@ -453,6 +487,7 @@ body.dark-theme {
   place-items: center;
   margin-bottom: 1rem;
   transition: background .4s;
+  box-shadow: 0 0 20px 5px #96e5eb;
 }
 
 .skills__blob img{
@@ -531,6 +566,13 @@ body.dark-theme {
 .vlt,
 .club{
   width: 40px;
+  border-radius: 2rem;
+  box-shadow: 0 0 10px 2px #fff;
+}
+
+.auto-type{
+  color: var(--typing-color);
+  font-weight: bold;
 }
 
 
@@ -539,6 +581,10 @@ body.dark-theme {
   display: block;
   font-size: var(--small-font-size);
   color: var(--text-color-light);
+}
+
+.ri-calendar-event-fill{
+  vertical-align: top;
 }
 
 .qualification__country{
@@ -1194,7 +1240,7 @@ body.dark-theme {
   }
 
   .home__title{
-    font-size: var(--biggest-font-size);
+    font-size: 2.5rem;
   }
 
   .home__blob{
